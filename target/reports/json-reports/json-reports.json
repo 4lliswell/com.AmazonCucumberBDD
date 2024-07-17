@@ -1,0 +1,364 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-17T13:06:09.154Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Kullanici Amazon Sitesine Login Olup Sepete Urun Ekleyip, Cikararir ve Cikis Yapar",
+        "description": "",
+        "id": "kullanici-amazon-sitesine-login-olup-sepete-urun-ekleyip--cikarabilmeli-ve-cikis-yapabilmeli;kullanici-amazon-sitesine-login-olup-sepete-urun-ekleyip--cikararir-ve-cikis-yapar",
+        "after": [
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2729960400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici URL'e gider \"amazonUrl\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amazonUrl\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.CommonStepDefinitions.kullaniciUrleGider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84620600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ana sayfanin acildigi kontrol edilir \"amazonUrl\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amazonUrl\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.anaSayfaninAcildigiKontrolEdilir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118085000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "cerez tercihlerinden cerezleri kabul et secilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.cerezTercihlerindenCerezleriKabulEtSecilir()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1641636000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "siteye login olunur \"amazonEmail\" \"amazonPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amazonEmail\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"amazonPassword\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.siteyeLoginOlunur(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1749924600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "login islemi kontrol edilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.loginIslemiKontrolEdilir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161564600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "arama butonu yanindaki kategoriler tabindan \"Bilgisayarlar\" secilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bilgisayarlar\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.aramaButonuYanindakiKategorilerTabindanSecilir(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124496000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Bilgisayarlar\" kategorisi secildigi kontrol edilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bilgisayarlar\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.kategorisiSecildigiKontrolEdilir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1426131100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "arama alanina \"MSI\" yazilir ve arama yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MSI\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.aramaAlaninaMSIYazilirVeAramaYapilir(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20214400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "arama yapildigi kontrol edilir \"MSI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MSI\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.aramaYapildigiKontrolEdilir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41033900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "arama sonuclari sayfasindan \"2\" sayfa acilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.aramaSonuclariSayfasindanSayfaAcilir(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12000800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"2\" sayfanin acildigi kontrol edilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.sayfaninAcildigiKontrolEdilir(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3274350300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "sayfadaki \"2\" urun favorilere eklenir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinitions.AmazonStepDefinitions.sayfadakiUrunFavorilereEklenir(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 686096200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "urunun favorilere eklendigi kontrol edilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.urununFavorilereEklendigiKontrolEdilir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1806218200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "hesabim seceneginden favori listem sayfasina gidilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.hesabimSecenegindenFavoriListemSayfasinaGidilir()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48154800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "favori listem sayfasinin acildigi kontrol edilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.favoriListemSayfasininAcildigiKontrolEdilir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50013500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "eklenen urun favorilerden silinir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.eklenenUrunFavorilerdenSilinir()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 587761700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "silme isleminin gercekleştigi kontrol edilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.silmeIslemininGercekleştigiKontrolEdilir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1096187200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "uye cikis islemi yapilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.uyeCikisIslemiYapilir()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19999600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "cikis isleminin yapildigi kontrol edilir",
+            "match": {
+              "location": "stepDefinitions.AmazonStepDefinitions.cikisIslemininYapildigiKontrolEdilir()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170241000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "kullanici tarayiciyi kapatir",
+            "match": {
+              "location": "stepDefinitions.CommonStepDefinitions.kullaniciTarayiciyiKapatir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Kullanici Amazon Sitesine Login Olup Sepete Urun Ekleyip, Cikarabilmeli ve Cikis Yapabilmeli",
+    "description": "",
+    "id": "kullanici-amazon-sitesine-login-olup-sepete-urun-ekleyip--cikarabilmeli-ve-cikis-yapabilmeli",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AmazonTest.feature",
+    "tags": [
+      {
+        "name": "@amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

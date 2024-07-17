@@ -10,15 +10,22 @@ import utilities.Driver;
 public class Hooks {
 
     @Before
-    public void setUp() {
+    public void setUp(Scenario scenario) {
+        System.out.println("Scenario Name: " + scenario.getName());
+        System.out.println("Scenario ID: " + scenario.getId());
     }
 
     @After
     public void tearDown(Scenario scenario) {
-        final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+
         if (scenario.isFailed()) {
-            scenario.attach(screenshot, "image/png", "screenshots");
+            System.out.println("Senaryo başarısız oldu");
+            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "Başarısız Senaryo Ekran Görüntüsü");
+
+            Driver.closeDriver();
         }
-        Driver.closeDriver();
+
+
     }
 }

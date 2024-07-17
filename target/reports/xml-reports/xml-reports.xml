@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="16.001" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Kullanici Amazon Sitesine Login Olup Sepete Urun Ekleyip, Cikarabilmeli ve Cikis Yapabilmeli" name="Kullanici Amazon Sitesine Login Olup Sepete Urun Ekleyip, Cikararir ve Cikis Yapar" time="15.875">
+<system-out><![CDATA[
+Given kullanici URL'e gider "amazonUrl".....................................passed
+And ana sayfanin acildigi kontrol edilir "amazonUrl"........................passed
+When cerez tercihlerinden cerezleri kabul et secilir........................passed
+When siteye login olunur "amazonEmail" "amazonPassword".....................passed
+And login islemi kontrol edilir.............................................passed
+When arama butonu yanindaki kategoriler tabindan "Bilgisayarlar" secilir....passed
+And "Bilgisayarlar" kategorisi secildigi kontrol edilir.....................passed
+When arama alanina "MSI" yazilir ve arama yapilir...........................passed
+And arama yapildigi kontrol edilir "MSI"....................................passed
+When arama sonuclari sayfasindan "2" sayfa acilir...........................passed
+And "2" sayfanin acildigi kontrol edilir....................................passed
+When sayfadaki "2" urun favorilere eklenir..................................passed
+And urunun favorilere eklendigi kontrol edilir..............................passed
+When hesabim seceneginden favori listem sayfasina gidilir...................passed
+And favori listem sayfasinin acildigi kontrol edilir........................passed
+When eklenen urun favorilerden silinir......................................passed
+And silme isleminin gercekleştigi kontrol edilir............................passed
+When uye cikis islemi yapilir...............................................passed
+And cikis isleminin yapildigi kontrol edilir................................passed
+Then kullanici tarayiciyi kapatir...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
