@@ -1,52 +1,80 @@
-# TestNG Projesinin Cucumber BDD`ye uyarlamasi
+# Amazon Web Sitesi Selenium Cucumber BDD Otomasyon Testi
 
-# Proje Hazırlanırken Dikkat Edilmesi Gerekenler
-●	Proje Java programlama dilinde yazılmalıdır.
+Bu proje, Selenium ve Cucumber BDD kullanılarak Amazon Türkiye sitesi üzerinde otomasyon testleri yapmak amacıyla geliştirilmiştir.
+Amazon web sitesine yönelik login olma, ürün arama, sepete ürün ekleme, sepet işlemlerini doğrulama gibi çeşitli işlevlere odaklanmaktadır.
 
-●	Yazılacak senaryo için Selenium ve JUnit kullanılmalıdır.
+## Proje Amaçları
 
-●	Assertions kullanarak senaryonun doğru çalışırlığı kontrol edilmelidir.
+- Amazon Türkiye sitesini açarak ana sayfanın doğru yüklenip yüklenmediğini kontrol etmek.
+- Kullanıcı girişi yaparak doğru şekilde giriş yapıldığını kontrol etmek.
+- Kategoriler tabından bilgisayar seçeneğini seçerek doğruluğunu kontrol etmek.
+- Arama yaparak sonuçların doğru şekilde geldiğini kontrol etmek.
+- Favorilere ürün ekleyip, favori listesinden silerek bu işlemlerin doğru çalıştığını kontrol etmek.
+- Kullanıcı hesabından çıkış yapıp, çıkışın doğru çalıştığını kontrol etmek.
 
-●	Page Object Model uygulanmalıdır.
+## Gereksinimler
 
-●	OOP prensiplerine uygun geliştirilmelidir.
+- Java 8 veya üstü
+- Selenium WebDriver
+- Cucumber
+- Maven (proje bağımlılıklarını yönetmek için)
 
-# Amazon Senaryosu 
+## Kurulum
 
-●	https://www.amazon.com.tr/ sitesi açılır.
+1. **Projeyi İndirin:**
 
-● Ana sayfanın açıldığı kontrol edilir.
+   ```bash
+   git clone https://github.com/kullanici/proje-adı.git
+   cd proje-adı
+   ```
 
-●	Çerez tercihlerinden Çerezleri kabul et seçilir.
+2. **Bağımlılıkları Yükleyin:**
 
-●	Siteye login olunur.
 
-●	Login işlemi kontrol edilir.
+   pom.xml
+   
 
-●	Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
+## Nasıl Kullanılır
 
-●	Bilgisayar kategorisi seçildiği kontrol edilir.
+Proje bağımlılıkları yüklendikten sonra, testleri aşağıdaki komutla çalıştırabilirsiniz:
 
-●	Arama alanına MSI yazılır ve arama yapılır.
+```bash
+mvn test
+```
 
-●	Arama yapıldığı kontrol edilir.
+## Proje Yapısı
 
-●	Arama sonuçları sayfasından 2. sayfa açılır.
+Proje, aşağıdaki dizin yapısına sahiptir:
 
-●	2. sayfanın açıldığı kontrol edilir.
+- `src/test/java`: Test kodları
+  - `hooks`: Test senaryolarının öncesinde veya sonrasında çalışacak kod blokları
+  - `pages`: Sayfa objeleri için sınıflar
+  - `runners`: Cucumber'ın test senaryolarını nasıl yürüteceğini belirtir
+  - `stepDefinitions`:  Cucumber senaryolarındaki adımların (steps) kodları
+  - `utilities`: Yardımcı sınıflar (Log4j vb.)
+- `src/test/reources`: Cucumber senaryolarındaki adımlar (steps)
+  - `features`: Test senaryolarının Gherkin dilinde tanımlandığı dosyalar
 
-●	Sayfadaki 2. ürün favorilere eklenir.
+## Senaryo Adımları ve Kod Örnekleri
 
-●	2. Ürünün favorilere eklendiği kontrol edilir.
+Proje içerisinde yer alan senaryolar ve her bir adım için kullanılan kod örnekleri aşağıda yer almaktadır:
 
-●	Hesabım > Favori Listem sayfasına gidilir.
+1. **Amazon sitesi açılır ve ana sayfa doğruluğu kontrol edilir:**
 
-●	“Favori Listem” sayfası açıldığı kontrol edilir.
+2. **Çerez tercihlerinden kabul seçeneği işaretlenir:**
 
-●	Eklenen ürün favorilerden silinir.
+3. **Siteye login olunur ve login işlemi kontrol edilir:**
 
-●	Silme işleminin gerçekleştiği kontrol edilir.
+4. **Arama butonu yanındaki kategoriler tabından bilgisayar seçilir ve doğruluğu kontrol edilir:**
 
-●	Üye çıkış işlemi yapılır.
+5. **Arama alanına MSI yazılır ve arama yapılır, arama sonuçları kontrol edilir:**
 
-●	Çıkış işleminin yapıldığı kontrol edilir.
+6. **Arama sonuçları sayfasından 2. sayfa açılır ve doğruluğu kontrol edilir:**
+
+7. **Sayfadaki 2. ürün favorilere eklenir ve eklemenin doğruluğu kontrol edilir:**
+
+8. **Hesabım > Favori Listem sayfasına gidilir ve açıldığı kontrol edilir:**
+
+9. **Eklenen ürün favorilerden silinir ve silme işleminin doğruluğu kontrol edilir:**
+
+10. **Üye çıkış işlemi yapılır ve çıkışın doğruluğu kontrol edilir:**
