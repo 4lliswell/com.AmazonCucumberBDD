@@ -57,7 +57,7 @@ Proje, aşağıdaki dizin yapısına sahiptir:
 
 ## Senaryo Adımları ve Kod Örnekleri
 
-Proje içerisinde yer alan senaryolar ve her bir adım için kullanılan kod örnekleri aşağıda yer almaktadır:
+Proje içerisinde yer alan senaryolar aşağıda yer almaktadır:
 
 1. **Amazon sitesi açılır ve ana sayfa doğruluğu kontrol edilir:**
 
